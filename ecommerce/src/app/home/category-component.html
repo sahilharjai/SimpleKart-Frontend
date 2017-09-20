@@ -1,0 +1,240 @@
+
+    <main id="mainContainer">
+       
+        <!-- Main Container -->
+        <div class="container">
+
+            <div class="row">
+               
+                <!-- Sidebar -->
+                <div class="col-lg-3 filter-menu">
+                    <div class="sticky">
+                        <!-- Panel -->
+                        <h5><strong>BROWSE</strong></h5>
+                        <div class="divider"></div>
+
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="checkbox1">
+                                <label for="checkbox1">Bags</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="checkbox2">
+                                <label for="checkbox2">Booking</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="checkbox3">
+                                <label for="checkbox3">Clothing</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="checkbox4" checked="checked">
+                                <label for="checkbox4">Shoes</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="checkbox5">
+                                <label for="checkbox5">Music</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="checkbox6">
+                                <label for="checkbox6">Posters</label>
+                            </li>
+                        </ul>
+
+                        <!-- Filter by color-->
+                        <h5 class="pt-2"><strong>COLOR</strong></h5>
+                        <div class="divider"></div>
+
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="checkbox9" checked="checked">
+                                <label for="checkbox9">White</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="checkbox12">
+                                <label for="checkbox10">Beige</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="checkbox11">
+                                <label for="checkbox11">Black</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="checkbox12">
+                                <label for="checkbox12">Green</label>
+                            </li>
+                        </ul>
+
+                        <!-- Filter by size -->
+                        <h5 class="pt-2"><strong>SIZE</strong></h5>
+                        <div class="divider"></div>
+
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="checkbox13">
+                                <label for="checkbox13">Extra Small</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="checkbox14">
+                                <label for="checkbox14">Small</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="checkbox15" checked="checked">
+                                <label for="checkbox15">Medium</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="checkbox16">
+                                <label for="checkbox16">Large</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="checkbox17">
+                                <label for="checkbox17">Extra Large</label>
+                            </li>
+                        </ul>
+                        <!--/.Panel-->
+                        
+                    </div>
+                    
+                </div>
+                <!-- /.Sidebar -->
+
+                <!-- Content -->
+                <div class="col-lg-9">
+                   
+                    <!-- Filter Area -->
+                    <div class="row" >
+                       
+                        <div class="col-6 col-md-5">
+                           
+                            <!-- Sort by -->
+                            <select class="mdb-select colorful-select dropdown-primary">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Default sorting</option>
+                                <option value="2">Sort by price</option>
+                                <option value="3">Sort by popularity</option>
+                            </select>
+                            <!-- /.Sort by -->
+                            
+                        </div>
+                        
+                        <div class="col-6 col-md-7 text-right">
+                           
+                            <!-- View Switcher -->
+                            <a class="btn btn-secondary"><i class="fa fa-th" aria-hidden="true"></i> Grid</a>
+                            <a class="btn btn-primary"><i class="fa fa-th-list" aria-hidden="true"></i> List</a>
+                            <!-- /.View Switcher -->
+                            
+                        </div>
+                        
+                    </div>
+                    <!-- /.Filter Area -->
+
+                    <!-- Products List -->
+                    <section class="section">
+                       
+                        <!-- Single Product -->
+                        <div class="row" *ngFor="let product of category_products">
+
+                            <!--First column-->
+                            <div class="col-lg-5 mb-r">
+                               
+                                <!--Featured image-->
+                                <div [routerLink]="['/product',product.id]"  class="view overlay hm-white-slight" style="box-shadow: none;">
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <img src="{{product.product.product_pic}}" class="img-fluid" style="max-height:350px;margin:auto;">
+                                        </div>
+                                    </div>
+                                    <a data-toggle="modal" data-target="#quick-look-ex">
+                                        <div class="mask waves-light">
+                                            <div class="flex-center product-quick-look">
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <!--/First column-->
+
+                            <!-- Second column -->
+                            <div class="col-lg-7 mb-r">
+                               
+                                <!-- Excerpt -->
+                                <h4><a [routerLink]="['/product',product.id]">{{product.product.title}}</a></h4>
+
+                                <!-- Product Description -->
+                                <p>{{product.product.description}}</p>
+
+                                <!-- Review -->
+                                <div class="orange-text">
+                                    <i class="fa fa-star"> </i>
+                                    <i class="fa fa-star"> </i>
+                                    <i class="fa fa-star"> </i>
+                                    <i class="fa fa-star"> </i>
+                                    <i class="fa fa-star"> </i>
+                                </div>
+
+                                <p><span class="green-text price"><strong>Rs.{{product.price}}</strong></span> <span class="grey-text" *ngIf="product.sale_price"><small><s>{{product.sale_price}}</s></small></span></p>
+
+                                <!-- Buttons -->
+                                <a class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                                <a class="btn btn-primary waves-effect waves-light"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</a>
+                                <!-- /.Buttons -->
+                                
+                            </div>
+                            <!-- /.Second column -->
+
+                        </div>
+                        <!-- /.Single Product -->
+
+                        
+                    </section>
+                    <!-- /.Products List -->
+                    
+                </div>
+                <!-- /.Content -->
+                
+            </div>
+            
+        </div>
+        <!-- /.Main Container -->
+        
+    </main>
+
+ 
+    <script type="text/javascript">
+        /* WOW.js init */
+        new WOW().init();
+
+        /* Side navigation toggle */
+        $(".button-collapse").sideNav();
+        var el = document.querySelector('.custom-scrollbar');
+        Ps.initialize(el);
+
+        $('.mdb-select').material_select();
+
+        // Tooltips Initialization
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+            $('#toggle').tooltip('show')
+        })
+        
+        $(function () {
+            $(".sticky").sticky({
+                topSpacing: 90
+                , zIndex: 2
+                , stopper: ".page-footer"
+            });
+        });
+    </script>

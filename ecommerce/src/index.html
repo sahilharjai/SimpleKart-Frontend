@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Ecommerce</title>
+  <base href="/">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://mdbootstrap.com/live/_MDB/css/customizer.min.css">
+    <style type="text/css">
+        @keyframes pulsatingLogo {
+            0%   { stroke: rgba(236, 46, 43, 0.5); }
+            33%  { stroke: rgba(35, 133, 74, 0.5); }
+            66% { stroke: rgba(63, 77, 160, 0.5); }
+            100% { stroke: rgba(236, 46, 43, 0.5); }
+        }
+        .loading-logo {
+            align-items: center;
+            
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        .loading-logo svg {
+            display: inline-block;
+            fill: #e8e8e8;       
+            height: auto;
+            max-width: 80%;
+            width: 200px;
+            z-index: -1000;
+        }
+        .loading-logo svg text{
+            stroke:rgba(236, 46, 43, 0.5);
+            animation: pulsatingLogo 3s infinite;
+            stroke-width:12;
+            fill:none;
+        }
+    </style>
+</head>
+<body>
+
+  <app-root>
+  <div class="loading-logo">
+            <svg  xmlns="http://www.w3.org/2000/svg">
+                <!-- <path d="M120 55 A20 20 0 1 0 100 75 A20 20 0 1 1 80 95"></path> -->
+                <text x="20" y="100"
+                      style="font-size: 68px; transform: scale(.75,1);">
+                    SK
+                </text>
+            </svg>
+        </div>
+
+
+<link rel="stylesheet" href="https://npmcdn.com/sweetalert2@4.0.15/dist/sweetalert2.min.css">
+    <script src="https://npmcdn.com/sweetalert2@4.0.15/dist/sweetalert2.min.js"></script>
+  	    
+  </app-root>
+</body>
+</html>
+

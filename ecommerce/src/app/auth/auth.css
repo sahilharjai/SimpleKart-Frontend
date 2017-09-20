@@ -1,0 +1,44 @@
+.feedback{
+  margin-bottom:20px;
+  margin-left: 9%;
+  color: #d9534f;
+  font-size: 12px;
+}
+    
+.input-field{margin-bottom:5px;}
+
+h4{margin-bottom:25px;}
+
+.btn-insta {
+  background:  linear-gradient( #400080, transparent), linear-gradient( 
+   200deg, #d047d1, #ff0000,    #ffff00); 
+}
+.btn-insta:hover, .btn-insta:focus {
+  background-color: #680d77; }
+
+footer a {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+footer a:hover {
+  color: white !important;
+  -webkit-transform: scale(1.2);
+}
+h6{
+  font-size: 14px;
+}
+.subscribe-button:hover
+{
+  background: rgba(255, 255, 255, 1) !important;
+}
+
+.subscribe-button
+{
+  margin-top:3px !important;
+  margin-bottom: 1px !important;
+  margin-left: -53px !important;    
+  padding-bottom: 8px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important; 
+  background: rgba(255, 255, 255, 0.8);
+  color:black !important;
+}

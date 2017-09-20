@@ -1,0 +1,50 @@
+
+
+    <main id="mainContainer">
+       
+        <!-- Main Container -->
+        <div class="container">
+
+            <section class="section">
+               
+                <p class='lead'>
+          Order {{ order.order_id }}Summary</p>
+
+          <table class='table'>
+            <tr>
+              <td>
+                {{ order.cart_item.length }} Item(s): <br>
+                <ng-container *ngFor="let cart of order.cart_item">
+                  <b>{{ cart.item.product.title }}</b><br>
+                </ng-container>
+              </td>
+              
+            </tr>
+            <tr><td>Cart Subtotal: {{ order.cart_item[0].cart.subtotal }}</td></tr>
+            <tr><td>Tax: {{ order.cart_item[0].cart.tax_total }}</td></tr>
+            <tr><td>Items Total: {{ order.cart_item[0].cart.total }}</td></tr>
+
+            <tr><td>Shipping: {{ order.shipping_total_price }}</td></tr>
+            <tr><td>Order Total: {{ order.order_total }}</td></tr>
+
+
+          </table>
+          
+
+          <div class='col-sm-4 col-sm-offset-4 text-center'>
+          <p><b>Shipping to</b></p>
+          <br/>
+          {{ order.shipping_address.street }},{{ order.shipping_address.city }},{{ order.shipping_address.zipcode }},{{ order.shipping_address.state }}
+          </div>
+          
+
+
+
+                
+            </section>
+
+        </div>
+        <!-- /.Main Container -->
+        
+    </main>
+

@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from mdbootstrap.com/live/_MDB/templates/Ecommerce/product-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Jul 2017 13:31:39 GMT -->
+<head>
+	<!-- Required meta tags always come first -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Material Design Bootstrap Template</title>
+    
+    <!-- Meta OG -->
+    <meta property="og:title" content="Advanced Product Page Template">
+    <meta property="og:description" content="Another, more advanced way to showcase your products, price, their reviews and overall rating among customers.">
+    <meta property="og:image" content="https://mdbootstrap.com/img/Live/MDB/product-page.jpg">
+    <meta property="og:url" content="product-page.html">
+    <meta property="og:site_name" content="mdbootstrap.com">
+    <!-- /Meta OG -->
+
+    <!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:description" content="Another, more advanced way to showcase your products, price, their reviews and overall rating among customers." />
+	<meta name="twitter:title" content="Advanced Product Page Template" />
+	<meta name="twitter:site" content="@MDBootstrap" />
+	<meta name="twitter:image" content="https://mdbootstrap.com/img/Live/MDB/product-page.jpg" />
+	<meta name="twitter:creator" content="@MDBootstrap" />
+	<!-- /Twitter Card -->    
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Material Design Bootstrap -->
+	<link href="css/mdb.min.css" rel="stylesheet">
+	
+	<!-- Customizer -->
+    <link rel="stylesheet" href="https://mdbootstrap.com/live/_MDB/css/customizer.min.css">
+
+</head>
+
+<body class="hidden-sn pink-skin animated">
+    <!-- Customizer -->
+    <div id="customizer" class="z-depth-1">
+        <a href="#" id="toggle" data-toggle="tooltip" data-placement="left" title="Customize your template!"><i class="fa fa-cog" aria-hidden="true"></i></a>
+        <div class="inner">
+            <p class="text-center customizer-heading">Pick a skin color</p>
+            <ul class="skins-list">
+                <li><a href="#" data-skin-color="deep-purple-skin"><span class="color skin-deep-purple"></span></a></li>
+                <li><a href="#" data-skin-color="navy-blue-skin"><span class="color skin-navy-blue"></span></a></li>
+                <li><a href="#" data-skin-color="cyan-skin"><span class="color skin-cyan"></span></a></li>
+                <li><a href="#" data-skin-color="pink-skin"><span class="color skin-pink"></span></a></li>
+                <li><a href="#" data-skin-color="indigo-skin"><span class="color skin-indigo"></span></a></li>
+                <li><a href="#" data-skin-color="light-blue-skin"><span class="color skin-light-blue"></span></a></li>
+                <li><a href="#" data-skin-color="grey-skin"><span class="color skin-grey"></span></a></li>
+                <li><a href="#" data-skin-color="white-skin"><span class="color skin-white"></span></a></li>
+                <li><a href="#" data-skin-color="black-skin"><span class="color skin-black"></span></a></li>
+                <li><a href="#" data-skin-color="mdb-skin"><span class="color skin-mdb"></span></a></li>
+            </ul>
+            <p class="text-center customizer-heading">SideNav Background Type</p>
+            <form class="form-inline">
+                <fieldset class="form-group">
+                    <input name="group1" type="radio" id="radio11" value="flat">
+                    <label for="radio11">Flat</label>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <input name="group1" type="radio" id="radio21" value="gradient">
+                    <label for="radio21">Gradient</label>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <input name="group1" type="radio" id="radio31" value="background" checked="checked">
+                    <label for="radio31">Image</label>
+                </fieldset>
+            </form>
+
+            <div id="bg-option">
+                <p class="text-center customizer-heading">Background Image</p>
+
+                <div class="bg-img-preview">
+                    <label for="radio12"><img class="img-fluid" src="https://mdbootstrap.com/img/Others/sidenav1-min.jpg" alt="Option 1"></label>
+                    <label for="radio22"><img class="img-fluid" src="https://mdbootstrap.com/img/Others/sidenav2-min.jpg" alt="Option 2"></label>
+                    <label for="radio32"><img class="img-fluid" src="https://mdbootstrap.com/img/Others/sidenav3-min.jpg" alt="Option 3"></label>
+                    <label for="radio42"><img class="img-fluid" src="https://mdbootstrap.com/img/Others/sidenav4-min.jpg" alt="Option 4"></label>
+                </div>
+
+                <form class="form-inline bg-img-options">
+                    <fieldset class="form-group">
+                        <input name="group2" type="radio" id="radio12" value="1" checked="checked">
+                        <label for="radio12"></label>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <input name="group2" type="radio" id="radio22" value="2">
+                        <label for="radio22"></label>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <input name="group2" type="radio" id="radio32" value="3">
+                        <label for="radio32"></label>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <input name="group2" type="radio" id="radio42" value="4">
+                        <label for="radio42"></label>
+                    </fieldset>
+                </form>
+
+                <p class="text-center customizer-heading">Mask opacity</p>
+
+                <form class="form-inline">
+                    <fieldset class="form-group">
+                        <input name="group3" type="radio" id="radio13" value="strong" checked="checked">
+                        <label for="radio13">Strong</label>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <input name="group3" type="radio" id="radio23" value="light">
+                        <label for="radio23">Light</label>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <input name="group3" type="radio" id="radio33" value="slight">
+                        <label for="radio33">Slight</label>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div>
+                <p class="text-center customizer-heading d-inline">Fixed sidenav</p>
+                <div class="switch d-inline-block float-right">
+                    <label>
+                        Off
+                        <input type="checkbox">
+                        <span class="lever"></span> On
+                    </label>
+                </div>
+            </div>
+
+            <a href="https://mdbootstrap.com/product/ecommerce-theme/" type="button" class="btn light-blue darken-2 btn-block">Buy now</a>
+        </div>
+    </div>
+    <!-- /.Customizer -->
+
+    <!--Double navigation-->
+    <header>
+
+        <!-- Sidebar navigation -->
+        <ul id="slide-out" class="side-nav hidden custom-scrollbar sn-bg-2">
+
+            <!-- Logo -->
+            <li>
+                <div class="logo-wrapper waves-light">
+                    <a href="#"><img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" class="img-fluid flex-center"></a>
+                </div>
+            </li>
+            <!-- /.Logo -->
+
+            <!-- Social -->
+            <li>
+                <ul class="social">
+                    <li><a class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a></li>
+                    <li><a class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
+                    <li><a class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a></li>
+                    <li><a class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
+                </ul>
+            </li>
+            <!-- /.Social -->
+
+            <!-- Search Form -->
+            <li>
+                <form class="search-form" role="search">
+                    <div class="form-group waves-light">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </form>
+            </li>
+            <!-- /.Search Form -->
+
+            <!-- Side navigation links -->
+            <li>
+               
+                <ul class="collapsible collapsible-accordion">
+                    <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-shopping-bag"></i> Product Page<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="product.html" class="waves-effect">Product Page V.1</a>
+                                </li>
+                                <li><a href="product-page.html" class="waves-effect">Product Page V.2</a>
+                                </li>
+                                <li><a href="product-page-4.html" class="waves-effect">Product Page V.3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-shopping-cart"></i> Cart Pages<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="cart.html" class="waves-effect">Page with shopping cart</a>
+                                </li>
+                                <li><a href="contact.html" class="waves-effect">Page with contact form</a>
+                                </li>
+                                <li><a href="contact-2.html" class="waves-effect">Page with contact form V.2</a>
+                                </li>
+                                <li><a href="login.html" class="waves-effect">Page with sign in form</a>
+                                </li>
+                                <li><a href="terms.html" class="waves-effect">Page with 'terms of use'</a>
+                                </li>
+                                <li><a href="faq.html" class="waves-effect">Page with 'FAQ'</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-dashboard"></i> Homepages<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="home-page.html" class="waves-effect">Ecommerce homepage default</a>
+                                </li>
+                                <li><a href="home-page-2.html" class="waves-effect">Ecommerce homepage full width</a>
+                                </li>
+                                <li><a href="home-page-3-carousel.html" class="waves-effect">Ecommerce homepage V.3 Carousel</a>
+                                </li>
+                                <li><a href="home-page-3-full-page-carousel.html" class="waves-effect">Ecommerce homepage V.3 Full Page Carousel</a>
+                                </li>
+                                <li><a href="home-page-3-half-page-carousel.html" class="waves-effect">Ecommerce homepage V.3 Half Page Carousel</a>
+                                </li>
+                                <li><a href="home-page-4.html" class="waves-effect">Ecommerce homepage V.4</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-desktop"></i> Post Pages<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="post.html" class="waves-effect">Page with column on the right</a>
+                                </li>
+                                <li><a href="blog-post-left-column.html" class="waves-effect">Page with newsletter on the left</a>
+                                </li>
+                                <li><a href="blog-post.html" class="waves-effect">Page with newsletter on the right</a>
+                                </li>
+                                <li><a href="blog-post-full-width.html" class="waves-effect">Full width page with logged user</a>
+                                </li>
+                                <li><a href="blog-post-full-width%20not%20logged%20in%20user.html" class="waves-effect">Full width page with not logged user</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-diamond"></i> Category Pages<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="category-list-left-column.html" class="waves-effect">Category list with left column</a>
+                                </li>
+                                <li><a href="category-list-right-column.html" class="waves-effect">Category list with right column</a>
+                                </li>
+                                <li><a href="category-grid-left-column.html" class="waves-effect">Category grid with left column</a>
+                                </li>
+                                <li><a href="category-right-column.html" class="waves-effect">Category grid with right column</a>
+                                </li>
+                                <li><a href="category-grid-left-column-carousel.html" class="waves-effect">Category grid with left column carousel</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                
+            </li>
+            <!-- /.Side navigation links -->
+            
+            <div class="sidenav-bg mask-strong"></div>
+            
+        </ul>
+        <!-- /.Sidebar navigation -->
+
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-dark scrolling-navbar double-nav">
+
+            <!-- SideNav slide-out button -->
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+            </div>
+
+            <!-- Breadcrumb-->
+            <div class="breadcrumb-dn mr-auto">
+                <ol class="breadcrumb header-breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Blog</a></li>
+                    <li class="breadcrumb-item active">Blog Post</li>
+                </ol>
+            </div>
+
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+
+                <li class="nav-item ">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#cart-modal-ex"><span class="badge red">4</span> <i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="hidden-sm-down">Cart</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-envelope"></i> <span class="hidden-sm-down">Contact</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> Account</a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+
+        </nav>
+        <!-- /.Navbar -->
+
+    </header>
+    <!-- /.Double navigation -->
+
+    <!--Main layout-->
+    <main id="mainContainer">
+        <div class="container">
+
+            <!--Section: Product intro-->
+            <section class="section section-blog-fw">
+
+                <!--First row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <!--Featured image-->
+                        <img src="https://mdbootstrap.com/img/Photos/Slides/img (115).jpg">
+
+                        <!--Post data-->
+                        <div class="jumbotron">
+                            <h1 class="h1-responsive">Big Handbag for Fall / Winter Season</h1>
+                            <hr class="mb-1">
+                            <p>Short description</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat maiores dicta, illo ullam reiciendis sed, ab recusandae et perferendis in, distinctio, harum molestias eum quasi totam enim! Quibusdam, iure ipsa.</p>
+                            <button type="button" class="btn btn-secondary">Add to cart <i class="fa fa-shopping-cart right"></i></button>
+                            
+                            <button type="button" class="btn btn-primary">Live Preview <i class="fa fa-eye right"></i></button>
+                            
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-contact">Ask for details <i class="fa fa-envelope-o right"></i></button>
+
+                        </div>
+                        <!--/Post data-->
+
+                    </div>
+                </div>
+                <!--/First row-->
+
+            </section>
+            <!--/Section: Product intro-->
+
+            <!--Section: Product description-->
+            <section class="section">
+
+                <!--Section heading-->
+                <h1 class="section-heading">Product description</h1>
+                <!--Section sescription-->
+                
+                
+                
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs tabs-3 indigo" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#panel5" role="tab"><i class="fa fa-diamond"></i> Product description</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#panel6" role="tab"><i class="fa fa-heart-o"></i> About designer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#panel7" role="tab"><i class="fa fa-coffee"></i> More product details</a>
+                    </li>
+                </ul>
+                <!-- Tab panels -->
+                <div class="tab-content">
+                    <!--Panel 1-->
+                    <div class="tab-pane fade in show active" id="panel5" role="tabpanel">
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec tellus ac nisl accumsan vulputate. Cras dignissim ante nisi, eget tempus erat dictum nec. Ut maximus, arcu at congue eleifend, nisl est dignissim nunc, eget imperdiet dolor massa vulputate turpis. Suspendisse mollis lectus purus, sit amet rhoncus nunc finibus quis. In in nunc neque. Vivamus metus erat, ornare vel feugiat in, commodo eu augue. Duis porta est quis lorem molestie efficitur. Integer condimentum tellus sed leo finibus, non efficitur metus scelerisque. Ut laoreet turpis nec sem pellentesque pharetra. Aenean et aliquam nunc. Suspendisse sagittis ligula non nunc tristique luctus. Quisque velit ante, cursus scelerisque ligula in, scelerisque vulputate massa. Sed feugiat faucibus nisl in blandit. Nam vehicula dignissim massa, nec porttitor orci vestibulum sit amet. Vestibulum elementum vitae lacus ut gravida.</p>
+                    </div>
+                    <!--/.Panel 1-->
+                    <!--Panel 2-->
+                    <div class="tab-pane fade" id="panel6" role="tabpanel">
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+                    </div>
+                    <!--/.Panel 2-->
+                    <!--Panel 3-->
+                    <div class="tab-pane fade" id="panel7" role="tabpanel">
+                        <br>
+                        <p><i class="fa fa-minus"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+                        <p><i class="fa fa-minus"></i> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        <p><i class="fa fa-minus"></i> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    </div>
+                    <!--/.Panel 3-->
+                </div>
+
+            </section>
+            <!--/Section: Product description-->
+
+            <hr class="between-sections">
+
+            <!--Section: Product gallery-->
+            <section class="section mb-4">
+
+                <!--Section heading-->
+                <h1 class="section-heading">Product gallery</h1>
+                <!--Section sescription-->
+                <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div id="mdb-lightbox-ui"></div>
+
+                        <div class="mdb-lightbox no-margin">
+
+
+                            <figure class="col-md-4">
+                                <a href="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img (4).jpg" data-size="1600x1067">
+                                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img (31).jpg" class="img-fluid" />
+                                </a>
+                            </figure>
+
+                            <figure class="col-md-4">
+                                <a href="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img (2).jpg" data-size="1600x1067">
+                                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img (21).jpg" class="img-fluid" />
+                                </a>
+                            </figure>
+
+                            <figure class="col-md-4">
+                                <a href="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img (5).jpg" data-size="1600x1067">
+                                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img (22).jpg" class="img-fluid" />
+                                </a>
+                            </figure>
+
+                            <figure class="col-md-4">
+                                <a href="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img (3).jpg" data-size="1600x1067">
+                                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img (38).jpg" class="img-fluid" />
+                                </a>
+                            </figure>
+
+                            <figure class="col-md-4">
+                                <a href="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img (6).jpg" data-size="1600x1067">
+                                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img (39).jpg" class="img-fluid" />
+                                </a>
+                            </figure>
+
+                            <figure class="col-md-4">
+                                <a href="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/8-col/img (1).jpg" data-size="1600x1067">
+                                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img (37).jpg" class="img-fluid" />
+                                </a>
+                            </figure>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+            <!--/Section: Product gallery-->
+
+            <hr class="between-sections">
+
+            <!--Section: Features v.3-->
+            <section class="section feature-box">
+
+                <!--Section heading-->
+                <h1 class="section-heading">Why is it so great?</h1>
+                <!--Section sescription-->
+                <p class="section-description lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
+
+                <!--First row-->
+                <div class="row features-small">
+
+                    <!--First column-->
+                    <div class="col-md-5 mb-r center-on-small-only">
+                        <img src="https://mdbootstrap.com/img/Photos/Others/denim.jpg" alt="" class="z-depth-2">
+                    </div>
+                    <!--/First column-->
+
+                    <!--Second column-->
+                    <div class="col-md-7 center-on-small">
+                        <!--First row-->
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fa fa-tags indigo-text"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="feature-title">Promotions</h4>
+                                <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                        </div>
+                        <!--/First row-->
+
+                        <div style="height:50px"></div>
+
+                        <!--Second row-->
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fa fa-paint-brush indigo-text"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="feature-title">Design</h4>
+                                <p class="grey-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            </div>
+                        </div>
+                        <!--/Second row-->
+
+                        <div style="height:50px"></div>
+
+                        <!--Third row-->
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fa fa-money indigo-text"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="feature-title">Finance</h4>
+                                <p class="grey-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.</p>
+                            </div>
+                        </div>
+                        <!--/Third row-->
+                    </div>
+                    <!--/Second column-->
+                </div>
+                <!--/First row-->
+
+            </section>
+            <!--/Section: Features v.3-->
+
+            <hr class="between-sections">
+
+            <!--Section: Testimonials v.3-->
+            <section class="section team-section">
+
+                <!--Section heading-->
+                <h1 class="section-heading">Testimonials</h1>
+                <!--Section description-->
+                <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
+
+                <!--First row-->
+                <div class="row text-center">
+
+                    <!--First column-->
+                    <div class="col-md-4 mb-r">
+
+                        <div class="testimonial">
+                            <!--Avatar-->
+                            <div class="avatar">
+                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img (17).jpg" class="rounded-circle img-fluid">
+                            </div>
+
+                            <!--Content-->
+                            <h4>Anna Deynah</h4>
+                            <h5>Web Designer</h5>
+                            <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab.</p>
+
+                            <!--Review-->
+                            <div class="orange-text">
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star-half-full"> </i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/First column-->
+
+                    <!--Second column-->
+                    <div class="col-md-4 mb-r">
+                        <div class="testimonial">
+                            <!--Avatar-->
+                            <div class="avatar">
+                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img (9).jpg" class="rounded-circle img-fluid">
+                            </div>
+
+                            <!--Content-->
+                            <h4>John Doe</h4>
+                            <h5>Web Developer</h5>
+                            <p><i class="fa fa-quote-left"></i> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+
+                            <!--Review-->
+                            <div class="orange-text">
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/Second column-->
+
+                    <!--Third column-->
+                    <div class="col-md-4 mb-r">
+                        <div class="testimonial">
+                            <!--Avatar-->
+                            <div class="avatar">
+                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img (20).jpg" class="rounded-circle img-fluid">
+                            </div>
+                            <!--Content-->
+                            <h4>Maria Kate</h4>
+                            <h5>Photographer</h5>
+                            <p><i class="fa fa-quote-left"></i> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+
+                            <!--Review-->
+                            <div class="orange-text">
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star"> </i>
+                                <i class="fa fa-star-o"> </i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--/Third column-->
+
+                </div>
+                <!--/First row-->
+
+            </section>
+            <!--/Section: Testimonials v.3-->
+
+        </div>
+    </main>
+    <!--/Main layout-->
+
+
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only">
+
+        <!--Footer Links-->
+        <div class="container-fluid">
+            <div class="row">
+                <!--First column-->
+                <div class="col-lg-2 offset-lg-1">
+                    <h5 class="title social-section-title">Social Media</h5>
+                    <!-- Social Links -->
+                    <div class="social-section text-md-left">
+                        <ul class="text-center">
+                            <!-- Facebook -->
+                            <li><a class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a></li>
+                            <!-- Instagram -->
+                            <li><a class="btn-floating btn-small btn-ins"><i class="fa fa-instagram"></i></a></li>
+                            <!-- Twitter -->
+                            <li><a class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a></li>
+                            <!--Youtube-->
+                            <li><a class="btn-floating btn-small btn-yt"><i class="fa fa-youtube"></i></a></li>
+                            <!--Linkedin-->
+                            <li><a class="btn-floating btn-small btn-li"><i class="fa fa-linkedin"></i></a></li>
+                            <!-- Dribble -->
+                            <li><a class="btn-floating btn-small btn-dribbble"><i class="fa fa-dribbble left"></i></a></li>
+                            <!-- Pinterest -->
+                            <li><a class="btn-floating btn-small btn-pin"><i class="fa fa-pinterest"></i></a></li>
+                            <!-- Google+ -->
+                            <li><a class="btn-floating btn-small btn-gplus"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- /.Social Links -->
+                </div>
+                <!--/.First column-->
+
+                <!--Second column-->
+                <div class="col-lg-2">
+                    <h5 class="title">Delivery</h5>
+                    <ul>
+                        <li><a href="#">Store Delivery</a></li>
+                        <li><a href="#">Online Delivery</a></li>
+                        <li><a href="#">Delivery Terms & Conditions</a></li>
+                        <li><a href="#">Tracking</a></li>
+                    </ul>
+                </div>
+                <!--/.Second column-->
+
+                <!--Third column-->
+                <div class="col-lg-2">
+                    <h5 class="title">Need help?</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Product Registration</a></li>
+                    </ul>
+                </div>
+                <!--/.Third column-->
+
+                <!-- Fourth column -->
+                <div class="col-lg-4">
+                    <h5 class="title">Instagram Photos</h5>
+
+                    <ul class="instagram-photos">
+                        <li>
+                            <div class="view overlay hm-white-slight">
+                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img (9).jpg" alt="Instagram photo cap">
+                                <a href="#">
+                                    <div class="mask waves-light"></div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="view overlay hm-white-slight">
+                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img (20).jpg" alt="Instagram photo cap">
+                                <a href="#">
+                                    <div class="mask waves-light"></div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="view overlay hm-white-slight">
+                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img (19).jpg" alt="Instagram photo cap">
+                                <a href="#">
+                                    <div class="mask waves-light"></div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="view overlay hm-white-slight">
+                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img (16).jpg" alt="Instagram photo cap">
+                                <a href="#">
+                                    <div class="mask waves-light"></div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="view overlay hm-white-slight">
+                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img (5).jpg" alt="Instagram photo cap">
+                                <a href="#">
+                                    <div class="mask waves-light"></div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="view overlay hm-white-slight">
+                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img (18).jpg" alt="Instagram photo cap">
+                                <a href="#">
+                                    <div class="mask waves-light"></div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="view overlay hm-white-slight">
+                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img (15).jpg" alt="Instagram photo cap">
+                                <a href="#">
+                                    <div class="mask waves-light"></div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="view overlay hm-white-slight">
+                                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Avatars/img (17).jpg" alt="Instagram photo cap">
+                                <a href="#">
+                                    <div class="mask waves-light"></div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- /.Fourth column -->
+            </div>
+        </div>
+        <!--/.Footer Links-->
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                &copy; 2016 Copyright: <a href="http://www.mdbootstrap.com/"> MDBootstrap.com </a>
+            </div>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+    <!--/.Footer-->
+    
+    <!-- Cart Modal -->
+    <div class="modal fade cart-modal" id="cart-modal-ex" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                    <h4 class="modal-title" id="myModalLabel">Your cart</h4> </div>
+                <!--Body-->
+                <div class="modal-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Product name</th>
+                                <th>Price</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Product 1</td>
+                                <td>100$</td>
+                                <td><a><i class="fa fa-remove"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Product 2</td>
+                                <td>100$</td>
+                                <td><a><i class="fa fa-remove"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Product 3</td>
+                                <td>100$</td>
+                                <td><a><i class="fa fa-remove"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Product 4</td>
+                                <td>100$</td>
+                                <td><a><i class="fa fa-remove"></i></a></td>
+                            </tr>
+                            <tr class="total">
+                                <th scope="row">5</th>
+                                <td>Total</td>
+                                <td>400$</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="btn btn-primary">Checkout</button>
+                </div>
+                <!--Footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- /.Cart Modal -->
+    
+    <!-- Modal Contact -->
+    <div class="modal fade modal-ext" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Write to us</h4>
+                </div>
+                <!--Body-->
+                <div class="modal-body">
+                    <p>We like to receive a messages.</p>
+                    <br>
+                    <div class="md-form">
+                        <i class="fa fa-user prefix"></i>
+                        <input type="text" id="form22" class="form-control">
+                        <label for="form42">Your name</label>
+                    </div>
+
+                    <div class="md-form">
+                        <i class="fa fa-envelope prefix"></i>
+                        <input type="text" id="form32" class="form-control">
+                        <label for="form34">Your email</label>
+                    </div>
+
+                    <div class="md-form">
+                        <i class="fa fa-tag prefix"></i>
+                        <input type="text" id="form32" class="form-control">
+                        <label for="form34">Subject</label>
+                    </div>
+
+                    <div class="md-form">
+                        <i class="fa fa-pencil prefix"></i>
+                        <textarea type="text" id="form8" class="md-textarea"></textarea>
+                        <label for="form8">Icon Prefix</label>
+                    </div>
+
+                    <div class="text-center">
+                        <button class="btn btn-primary">Submit</button>
+
+                        <div class="call">
+                            <p>Or would you prefer to call? <span class="cf-phone"><i class="fa fa-phone"> +01 234 565 280</i></span></p>
+                        </div>
+                    </div>
+                </div>
+                <!--Footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+    <!-- Tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    
+    <!-- Customizer -->
+    <script type="text/javascript" src="https://mdbootstrap.com/live/_MDB/js/customizer.min.js"></script>
+
+    <script>
+        // SideNav init
+        $(".button-collapse").sideNav();
+        var el = document.querySelector('.custom-scrollbar');
+        Ps.initialize(el);
+        var el = document.querySelector('.custom-scrollbar');
+        Ps.initialize(el);
+
+
+        // MDB Lightbox Init
+        $(function () {
+            $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+        });
+        
+        new WOW().init();
+        
+        // Tooltips Initialization
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+            $('#toggle').tooltip('show')
+        })
+    </script>
+
+</body>
+
+
+<!-- Mirrored from mdbootstrap.com/live/_MDB/templates/Ecommerce/product-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Jul 2017 13:31:41 GMT -->
+</html>

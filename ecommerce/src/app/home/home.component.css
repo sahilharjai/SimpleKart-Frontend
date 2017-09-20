@@ -1,0 +1,44 @@
+.product-small-dp
+{
+	max-width:100px;
+	max-height:150px;
+}
+
+.card-height
+{
+	height:165px;
+}
+
+.no-pad-left
+{
+	padding-left: 0 !important;
+}
+
+.no-pad-right
+{
+	padding-right: 0 !important;
+}
+
+.category-height
+{
+	height: 193px;
+	min-width: 100%;
+}
+
+.ellipsis { text-overflow: ellipsis; overflow: hidden;}
+
+@media (max-width:988px)
+{
+
+	.category-height
+	{
+		height: auto !important;
+		min-width: 100%; 
+}
+}
+
+.image-relate
+{
+	
+	height:230px;
+}
